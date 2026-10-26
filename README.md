@@ -36,4 +36,12 @@ Uses the same public FormSubmit recipient as Nyxra: `supportnyxra@gmail.com`. It
 
 ## Hosting
 
+### Vercel
+
+Import this repository with the repository root as Root Directory. `vercel.json` selects the Other/static preset, runs `npm run build`, and publishes `dist`. Generated route directories support direct links such as `/contact/` and `/services/`. No serverless function is required.
+
+The development HTTP server is intentionally located at `scripts/preview.mjs` so framework detection does not mistake it for the deployed application. Run it locally with `npm run dev` only.
+
+### Sites
+
 The tracked `.openai/hosting.json` holds the selected Sites identity and static directory. Publishing uses the Sites source helper and exact committed source. This is a separate private Site; it does not replace www.nyxra.online or alter its DNS.

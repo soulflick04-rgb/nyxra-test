@@ -1,1 +1,1 @@
-{"name":"nyxra-digital-atelier","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"node server.mjs","check":"node --check dist/app.js && node --check dist/contact.js && node --check dist/policy-data.js","build":"node build.mjs"}}
+{"name":"nyxra-digital-atelier","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"node scripts/preview.mjs","check":"node --check dist/app.js && node --check dist/contact.js && node --check dist/policy-data.js","build":"node build.mjs"}}
